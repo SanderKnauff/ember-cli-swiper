@@ -1,0 +1,3 @@
+packages:
+  - 'ember-cli-swiper'
+  - 'test-app'

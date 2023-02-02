@@ -1,0 +1,14 @@
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    {{yield (hash slide=(component "swiper-slide"))}}
+  </div>
+
+  {{#if this.hasPagination}}
+    <div class="swiper-pagination"></div>
+  {{/if}}
+
+  {{#if this.hasNavigation}}
+    <div class={{this.nextElClass}}></div>
+    <div class={{this.prevElClass}}></div>
+  {{/if}}
+</div>
